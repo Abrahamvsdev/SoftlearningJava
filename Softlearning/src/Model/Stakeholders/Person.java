@@ -11,12 +11,13 @@ public abstract class Person {
     protected String dni;
     protected String number; // de telefono
     protected int antiquity; //cuando nacio
+    protected Person(){};
 
     // Constructor el metodo tiene que ser void a la fuerza porque es abstracto y no retorna nada
     public void person(String name, String surname, String email, String address, String dni, String number, int antiquity) throws Exception {
         StringBuilder errors = new StringBuilder();
         int errorCode;
-
+        
         
         if ((errorCode = this.setName(name)) != 0) {
             errors.append(Check.getErrorMessage(errorCode)).append("\n");
@@ -137,7 +138,8 @@ public abstract class Person {
 
     
     public String getDetails() {
-        //crear superstring con .append para eficiencia, pero primero asegurar que no es nulo
+        //crear superstring con .append para eficiencia, pero primero asegurar que no es nulo NO HACE FALTA
+
         return "Name: " + name + ", Surname: " + surname + ", Email: " + email + ", Address: " + address +
                 ", DNI: " + dni + ", Number: " + number + ", Antiquity: " + antiquity;
     }

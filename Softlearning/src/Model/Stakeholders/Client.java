@@ -10,7 +10,7 @@ public class Client extends Person {
     protected LocalDate registrationDate; // Cuando se registro
     protected DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-    public Client() {
+    protected Client() {
         
     }
 

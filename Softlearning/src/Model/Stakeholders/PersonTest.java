@@ -5,7 +5,7 @@ public class PersonTest {
         Client client1;
         try {
             
-            client1 = Client.getInstance(name, surname, email, address, dni, number, antiquity, paymentMode, membershipLevel, registrationDate);
+            client1 = Client.getInstance("name", "surname", "email@gmail.com", "address", "35016718G", "655555555", 1, "paymentMode", "membershipLevel", "10-10-1990");
             
             System.out.println(client1.getDetails());
         } catch (Exception e) {

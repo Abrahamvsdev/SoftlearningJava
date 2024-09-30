@@ -16,7 +16,7 @@ public abstract class Product implements Marketable {
     protected String type;
     protected String payMethod;
 
-    public Product(){//tengo que borrar esto cuando ya acabe?
+    protected Product(){//tengo que borrar esto cuando ya acabe? NO, ESTO SERVIRA PARA MAS ADELANTE
 
     }
         //Las clases abstractas no pueden ser static, esta es la que se usa para chekear cuando se crea el libro

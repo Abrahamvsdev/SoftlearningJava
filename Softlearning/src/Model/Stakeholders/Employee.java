@@ -7,7 +7,7 @@ public class Employee extends Person {
     protected String position;    // Cargo del empleado hacer futuro enum con basico intermedio y jefe
     protected double salary;      // Sueldo
 
-    public Employee() {
+    protected Employee() {
         
     }
 
@@ -85,7 +85,7 @@ public class Employee extends Person {
 
     @Override
     public String getDetails() {
-        //hacer futuro superstring con .append preguntar si puedo
+        //hacer futuro superstring con .append preguntar si puedo NO HACE FALTS
         return "Employee Details: \n" +
                 "Name: " + getName() + "\n" +
                 "Surname: " + getSurname() + "\n" +

@@ -20,7 +20,7 @@ public class Books extends Product implements Storable {
     protected Dimensions dim;
     protected boolean fragile;
     
-    public Books(){
+    protected Books(){
     
     }
     
